@@ -1,0 +1,13 @@
+DECLARE
+ Nilai NUMBER;
+ status VARCHAR2(16);
+BEGIN
+     a := &inputan;
+     IF Nilai >= 50 THEN
+	status := 'lulus';
+     ELSE
+	status := 'gagal';
+     END IF;
+     DBMS_OUTPUT.PUT_LINE (status);
+END;
+/
